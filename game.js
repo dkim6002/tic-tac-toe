@@ -1,11 +1,13 @@
 
+
+
 let game = (function() {
 	return {
 		init: function() {
 
 		},
-		moves: function() {
-
+		moves: function(id) {
+			console.log('click ' + id)
 		},
 		counter: function() {
 
@@ -15,3 +17,4 @@ let game = (function() {
 		}
 	}
 }());
+game.init()
