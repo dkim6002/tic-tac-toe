@@ -1,0 +1,37 @@
+.container {
+  width: 500px;
+  height: 500px;
+  margin: 250px auto;
+}
+
+.tile {
+	width: 30%;
+	height: 30%;
+	float: left;
+	color: #000000;
+	text-align: center;
+	font-size: 100px;
+}
+
+#one, #two, #three {
+	border-bottom: 3px solid #000000;
+}
+
+#two {
+  border-left: 3px solid #000000;
+  border-right: 3px solid #000000;
+}
+
+#four, #five, #six {
+  border-bottom: 3px solid #000000;
+}
+
+#five {
+  border-left: 3px solid #000000;
+  border-right: 3px solid #000000;
+}
+
+#eight {
+  border-left: 3px solid #000000;
+  border-right: 3px solid #000000;
+}
