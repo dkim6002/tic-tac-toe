@@ -35,3 +35,16 @@
   border-left: 3px solid #000000;
   border-right: 3px solid #000000;
 }
+
+.btn {
+  background: #3498db;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  position: absolute;
+  top: 80%;
+  left: 42%;
+}
