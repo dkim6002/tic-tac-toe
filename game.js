@@ -1,8 +1,9 @@
+const blocks = document.body.querySelectorAll('.tile');
 const [p1, p2] = ['x', 'o'];
 let current_player = p1;
 
 let init = () => {
-	
+	current_player = p1;
 }
 
 let moves = (id) => {
@@ -20,5 +21,9 @@ let moves = (id) => {
 }
 
 let restart = () => {
-
+	for (var i = 0; i < blocks.length; i++) {
+		blocks[i].innerHTML = '';
+		blocks[i].setAttribute('onClick', 'moves(id)');
+	}
+	current_player = p1;
 }
