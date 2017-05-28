@@ -1,16 +1,10 @@
 const blocks = document.body.querySelectorAll('.tile');
 const [p1, p2] = ['x', 'o'];
-
-let current_player = '';
+let current_player = p1;
 let counter = 1;
 
-let init = () => {
-	current_player = p1;
-	console.log(blocks)
-}
 
 let moves = (id) => {
-	console.log('click' + id);
 	let el = document.getElementById(id);
 	if (current_player === p1) {
 		el.innerHTML = p1;
@@ -34,7 +28,7 @@ let count = () => {
 			if (res == true) {
 				restart();
 			}
-		}, 100);
+		}, 300);
 	}
 }
 
@@ -44,6 +38,6 @@ let restart = () => {
 		blocks[i].setAttribute('onClick', 'moves(id)');
 	}
 	current_player = p1;
+	counter = 1;
 }
 
-init();
